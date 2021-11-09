@@ -1,5 +1,8 @@
 using System.Reflection;
 
+Console.WriteLine($"Type.GetType(\"Windows.Storage.ApplicationData, Windows, ContentType=WindowsRuntime\"): {Type.GetType("Windows.Storage.ApplicationData, Windows, ContentType=WindowsRuntime")}");
+Console.WriteLine($"Type.GetType(\"Windows.Storage.ApplicationData, Microsoft.Windows.SDK.NET\"): {Type.GetType("Windows.Storage.ApplicationData, Microsoft.Windows.SDK.NET")}");
+
 var propertyName = "TemporaryFolder";
 var CurrentApplicationData = ApplicationDataHelper.CurrentApplicationData;
 var appDataType = CurrentApplicationData?.GetType();
