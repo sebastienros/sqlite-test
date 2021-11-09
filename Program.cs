@@ -1,3 +1,5 @@
+using System.Reflection;
+
 var propertyName = "TemporaryFolder";
 var appDataType = ApplicationDataHelper.CurrentApplicationData?.GetType();
 
