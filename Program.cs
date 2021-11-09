@@ -8,8 +8,8 @@ Console.WriteLine($"appDataType?.GetRuntimeProperty(propertyName)!.GetValue(Curr
 var temporaryFolder = appDataType?.GetRuntimeProperty(propertyName)!.GetValue(CurrentApplicationData);
 
 Console.WriteLine($"temporaryFolder?.GetType(): {temporaryFolder?.GetType()}");
-Console.WriteLine($"temporaryFolder?.GetType().GetRuntimeProperty("Path"): {temporaryFolder?.GetType().GetRuntimeProperty("Path")}");
-Console.WriteLine($"temporaryFolder?.GetType().GetRuntimeProperty("Path")!.GetValue(temporaryFolder): {temporaryFolder?.GetType().GetRuntimeProperty("Path")!.GetValue(temporaryFolder)}");
+Console.WriteLine($"temporaryFolder?.GetType().GetRuntimeProperty(\"Path\"): {temporaryFolder?.GetType().GetRuntimeProperty("Path")}");
+Console.WriteLine($"temporaryFolder?.GetType().GetRuntimeProperty(\"Path\")!.GetValue(temporaryFolder): {temporaryFolder?.GetType().GetRuntimeProperty("Path")!.GetValue(temporaryFolder)}");
 
 // Console.WriteLine(ApplicationDataHelper.CurrentApplicationData);
 // Console.WriteLine(ApplicationDataHelper.TemporaryFolderPath);
