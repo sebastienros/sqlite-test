@@ -1,7 +1,7 @@
-[assembly: IgnoresAccessChecksTo("SqliteTest")]
-
 using Microsoft.Data.Sqlite;
 using System.Runtime.CompilerServices;
+
+[assembly: IgnoresAccessChecksTo("SqliteTest")]
 
 Console.WriteLine(Microsoft.Data.Sqlite.ApplicationDataHelper.CurrentApplicationData);
 Console.WriteLine(Microsoft.Data.Sqlite.ApplicationDataHelper.TemporaryFolderPath);
