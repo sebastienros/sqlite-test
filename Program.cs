@@ -1,5 +1,5 @@
-using Microsoft.Data.Sqlite;
 using System.Runtime.CompilerServices;
+using Microsoft.Data.Sqlite.Utilities;
 
 [assembly: IgnoresAccessChecksTo("SqliteTest")]
 
