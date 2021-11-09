@@ -23,10 +23,10 @@ jobs:
     - name: Checkout source code
       uses: actions/checkout@v2
 
-    # - name: Setup .NET Core 3.1 on ${{ matrix.os }}
-    #   uses: actions/setup-dotnet@v1
-    #   with:
-    #     dotnet-version: 3.1.*
+    - name: Setup .NET Core 3.1 on ${{ matrix.os }}
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.*
 
     # - name: Setup .NET Core 5.0 on ${{ matrix.os }}
     #   uses: actions/setup-dotnet@v1
@@ -43,4 +43,4 @@ jobs:
       run: |
         dotnet run --configuration Release --framework net6.0
         # dotnet run --configuration Release --framework net5.0
-        # dotnet run --configuration Release --framework netcoreapp3.1
+         dotnet run --configuration Release --framework netcoreapp3.1
